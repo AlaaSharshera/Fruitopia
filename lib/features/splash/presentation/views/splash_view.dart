@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({super.key});
@@ -6,7 +8,22 @@ class SplashView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    
+    body: Stack(children: [
+      Positioned(top: 0,
+      left: 0,
+        child: SvgPicture.asset("assets/images/splash_plant.svg")),
+      Center(child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Image.asset('assets/images/splash.jpg',width: MediaQuery.of(context).size.width*0.8,),
+          Text("Fruitopia",style: GoogleFonts.ptSerifCaption(fontSize: 26,fontWeight: FontWeight.bold,color: Color(0xff1B5E37),))
+        
+        ],
+      )),
+      Positioned(bottom: 50,
+        child: SvgPicture.asset('assets/images/splash-bottom.svg'))
+      
+    ],),
     );
   }
 }
