@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fruitopia/core/cubits/app_language_cubit/app_language_cubit.dart';
 import 'package:fruitopia/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'generated/l10n.dart';
@@ -8,7 +10,8 @@ class Fruitopia  extends StatelessWidget {
   const Fruitopia ({super.key});
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
+    return BlocProvider<AppLanguageCubit>(create:(context) => AppLanguageCubit(),
+      child:BlocBuilder<AppLanguageCubit,Locale> (builder:(context,state)=>ScreenUtilInit(
       designSize: const Size(360, 690),
       minTextAdapt: true,
       splitScreenMode: true,
@@ -16,7 +19,7 @@ class Fruitopia  extends StatelessWidget {
         return MaterialApp(
        useInheritedMediaQuery: true,
       //locale: DevicePreview.locale(context),
-         locale: Locale('en'),
+         locale: state,
       builder: DevicePreview.appBuilder,
         localizationsDelegates: [
                 S.delegate,
@@ -30,6 +33,7 @@ class Fruitopia  extends StatelessWidget {
     );
       },
       
+    ) )
     );
   }
 }
