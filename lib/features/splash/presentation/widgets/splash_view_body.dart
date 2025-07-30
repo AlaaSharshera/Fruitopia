@@ -13,12 +13,6 @@ class SplashViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
-      Positioned(
-        top: 50.h,
-        right: 20.w ,
-        child: TextButton(onPressed: (){
-          BlocProvider.of<AppLanguageCubit>(context).changeLanguage();
-        }, child: Text(S.of(context).appLanguage,style: GoogleFonts.cairoPlay(fontSize: 20.sp,fontWeight: FontWeight.bold,color: Color(0xff1B5E37),)))),
       Positioned(top: 0,
       left: 0,
         child: SvgPicture.asset(Assets.imagesSplashPlant,width: MediaQuery.of(context).size.width*0.5,height: MediaQuery.of(context).size.height*0.2,)),
