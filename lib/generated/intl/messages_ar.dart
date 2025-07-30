@@ -23,6 +23,16 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "appLanguage": MessageLookupByLibrary.simpleMessage("En"),
-    "appName": MessageLookupByLibrary.simpleMessage("فروتوبيا"),
+    "appName": MessageLookupByLibrary.simpleMessage("Fruitopia"),
+    "onboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
+      "اكتشف تجربة تسوق فريدة مع Fruitopia. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.",
+    ),
+    "onboardingSubtitle2": MessageLookupByLibrary.simpleMessage(
+      "نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية",
+    ),
+    "onboardingTitle1": MessageLookupByLibrary.simpleMessage(
+      "مرحبًا بك في Fruitopia",
+    ),
+    "onboardingTitle2": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
   };
 }

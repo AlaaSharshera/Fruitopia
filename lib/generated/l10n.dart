@@ -63,6 +63,46 @@ class S {
   String get appLanguage {
     return Intl.message('عربي', name: 'appLanguage', desc: '', args: []);
   }
+
+  /// `Welcome to Fruitopia`
+  String get onboardingTitle1 {
+    return Intl.message(
+      'Welcome to Fruitopia',
+      name: 'onboardingTitle1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discover a unique shopping experience with Fruitopia. Explore our wide selection of premium fresh fruits and enjoy the best deals and top quality.`
+  String get onboardingSubtitle1 {
+    return Intl.message(
+      'Discover a unique shopping experience with Fruitopia. Explore our wide selection of premium fresh fruits and enjoy the best deals and top quality.',
+      name: 'onboardingSubtitle1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search and Shop`
+  String get onboardingTitle2 {
+    return Intl.message(
+      'Search and Shop',
+      name: 'onboardingTitle2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We offer you the finest handpicked fruits. Browse details, images, and reviews to ensure you choose the perfect fruit.`
+  String get onboardingSubtitle2 {
+    return Intl.message(
+      'We offer you the finest handpicked fruits. Browse details, images, and reviews to ensure you choose the perfect fruit.',
+      name: 'onboardingSubtitle2',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
