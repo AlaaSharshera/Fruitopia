@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruitopia/features/on_boarding/presentation/views/onboarding_view.dart';
+import 'package:fruitopia/features/on_boarding/presentation/views/onboarding_pageview.dart';
 import 'package:fruitopia/features/splash/presentation/widgets/splash_view_body.dart';
 
 
@@ -29,7 +29,7 @@ class _SplashViewState extends State<SplashView> {
  void implementNavigation() {
   Future.delayed(Duration(seconds: 3), () {
     if (!mounted) return; 
-    Navigator.pushReplacementNamed(context, OnboardingView.routeName);
+    Navigator.pushReplacementNamed(context, OnboardingPageview.routeName);
   });
 }
 
