@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fruitopia/core/cubits/app_language_cubit/app_language_cubit.dart';
+import 'package:fruitopia/core/helper_functions/on_generate_routes.dart';
 import 'package:fruitopia/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'generated/l10n.dart';
@@ -29,6 +30,8 @@ class Fruitopia  extends StatelessWidget {
             ],
             supportedLocales: S.delegate.supportedLocales,
           debugShowCheckedModeBanner: false,
+          onGenerateRoute: onGenerateRoutes,
+          initialRoute: SplashView.routeName,
       home: SplashView(),
     );
       },
