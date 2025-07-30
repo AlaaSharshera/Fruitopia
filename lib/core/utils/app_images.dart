@@ -6,7 +6,7 @@ class Assets {
 
   static const String imagesOnboardingFruitBasket = "assets/images/onboarding-fruit-basket.svg";
 
-  static const String imagesSplash = "assets/images/splash.avif";
+  static const String imagesSplash = "assets/images/splash.jpg";
 
   static const String imagesSplashBottom = "assets/images/splash-bottom.svg";
 
