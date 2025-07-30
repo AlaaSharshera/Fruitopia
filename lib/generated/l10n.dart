@@ -103,6 +103,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Start Now`
+  String get onboardingButtonText {
+    return Intl.message(
+      'Start Now',
+      name: 'onboardingButtonText',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

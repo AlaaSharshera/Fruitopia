@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "appLanguage": MessageLookupByLibrary.simpleMessage("عربي"),
     "appName": MessageLookupByLibrary.simpleMessage("Fruitopia"),
+    "onboardingButtonText": MessageLookupByLibrary.simpleMessage("Start Now"),
     "onboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with Fruitopia. Explore our wide selection of premium fresh fruits and enjoy the best deals and top quality.",
     ),
