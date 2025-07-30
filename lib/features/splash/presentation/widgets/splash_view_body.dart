@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:fruitopia/core/cubits/app_language_cubit/app_language_cubit.dart';
+import 'package:fruitopia/constants.dart';
 import 'package:fruitopia/core/utils/app_images.dart';
 import 'package:fruitopia/generated/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -20,7 +19,7 @@ class SplashViewBody extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(Assets.imagesSplash,width: MediaQuery.of(context).size.width*0.8),
-          Text(S.of(context).appName,style: GoogleFonts.cairoPlay(fontSize: 26.sp,fontWeight: FontWeight.bold,color: Color(0xff1B5E37),))
+          Text(S.of(context).appName,style: GoogleFonts.cairoPlay(fontSize: 26.sp,fontWeight: FontWeight.bold,color: kPrimaryColor))
         
         ],
       )),
