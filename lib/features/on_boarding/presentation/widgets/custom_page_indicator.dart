@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruitopia/constants.dart';
+import 'package:fruitopia/core/utils/app_colors.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class CustomPageIndicator extends StatelessWidget {
@@ -20,8 +20,8 @@ class CustomPageIndicator extends StatelessWidget {
       dotWidth:  8.w,    
       dotHeight:  8.h,    
       paintStyle:  PaintingStyle.fill,      
-      dotColor:  pageIndex==1?kPrimaryColor:Color(0xff5DB957).withOpacity(0.5),    
-      activeDotColor:  kPrimaryColor    
+      dotColor:  pageIndex==1?AppColors.primaryColor:Color(0xff5DB957).withOpacity(0.5),    
+      activeDotColor:  AppColors.primaryColor    
   ), 
 );
   }

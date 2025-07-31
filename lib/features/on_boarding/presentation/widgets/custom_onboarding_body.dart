@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:fruitopia/constants.dart';
+import 'package:fruitopia/core/utils/app_colors.dart';
 import 'package:fruitopia/core/cubits/app_language_cubit/app_language_cubit.dart';
 import 'package:fruitopia/core/utils/app_images.dart';
 import 'package:fruitopia/generated/l10n.dart';
@@ -58,7 +58,7 @@ class CustomOnboardingBody extends StatelessWidget {
                       style: GoogleFonts.cairoPlay(
                         fontSize: 20.sp,
                         fontWeight: FontWeight.bold,
-                        color: kPrimaryColor,
+                        color: AppColors.primaryColor,
                       ),
                     ),
                   ),
@@ -78,7 +78,7 @@ class CustomOnboardingBody extends StatelessWidget {
           style: GoogleFonts.cairoPlay(
             fontSize: 24.sp,
             fontWeight: FontWeight.bold,
-            color: kPrimaryColor,
+            color: AppColors.primaryColor,
           ),
         ),
         SizedBox(height: 12.h),
@@ -90,7 +90,7 @@ class CustomOnboardingBody extends StatelessWidget {
             style: GoogleFonts.cairo(
               fontSize: 14.sp,
               fontWeight: FontWeight.bold,
-              color: kPrimaryColor,
+              color: AppColors.primaryColor,
               height: 1.5.h,
               letterSpacing: 0.5.sp,
             ),
