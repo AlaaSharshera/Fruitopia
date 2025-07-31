@@ -30,29 +30,40 @@ class CustomOnboardingBody extends StatelessWidget {
       children: [
         Stack(
           children: [
-            SvgPicture.asset(
-              Assets.imagesBackgroundOnboarding,
+            Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * 0.53,
-              color: backgroundColor,
-            ),
-          isOnboarding1?  Positioned(
-              top: 50.h,
-              right: 20.w,
-              child: TextButton(
-                onPressed: () {
-                  BlocProvider.of<AppLanguageCubit>(context).changeLanguage();
-                },
-                child: Text(
-                  S.of(context).appLanguage,
-                  style: GoogleFonts.cairoPlay(
-                    fontSize: 20.sp,
-                    fontWeight: FontWeight.bold,
-                    color: kPrimaryColor,
-                  ),
-                ),
+              alignment: Alignment.topCenter,
+              child: SvgPicture.asset(
+                Assets.imagesBackgroundOnboarding,
+                fit: BoxFit.cover,
+                width: double.infinity,
+                height: double.infinity,
+                color: backgroundColor,
               ),
-            ):SizedBox(),
+            ),
+
+            isOnboarding1
+                ? Positioned(
+                  top: 50.h,
+                  right: 20.w,
+                  child: TextButton(
+                    onPressed: () {
+                      BlocProvider.of<AppLanguageCubit>(
+                        context,
+                      ).changeLanguage();
+                    },
+                    child: Text(
+                      S.of(context).appLanguage,
+                      style: GoogleFonts.cairoPlay(
+                        fontSize: 20.sp,
+                        fontWeight: FontWeight.bold,
+                        color: kPrimaryColor,
+                      ),
+                    ),
+                  ),
+                )
+                : SizedBox(),
             Positioned(
               bottom: 0,
               right: 0,
@@ -70,14 +81,14 @@ class CustomOnboardingBody extends StatelessWidget {
             color: kPrimaryColor,
           ),
         ),
-        SizedBox(height: 16.h),
+        SizedBox(height: 12.h),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 12.w),
           child: Text(
             subtitle,
             textAlign: TextAlign.center,
             style: GoogleFonts.cairo(
-              fontSize: 13.sp,
+              fontSize: 14.sp,
               fontWeight: FontWeight.bold,
               color: kPrimaryColor,
               height: 1.5.h,
@@ -85,7 +96,6 @@ class CustomOnboardingBody extends StatelessWidget {
             ),
           ),
         ),
-        
       ],
     );
   }
