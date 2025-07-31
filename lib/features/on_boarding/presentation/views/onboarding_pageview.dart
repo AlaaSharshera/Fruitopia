@@ -33,7 +33,7 @@ class _OnboardingPageviewState extends State<OnboardingPageview> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Scaffold(body:  Column(
       children: [
         Expanded(
           child: PageView(
@@ -59,7 +59,7 @@ class _OnboardingPageviewState extends State<OnboardingPageview> {
           maintainAnimation: true,
           maintainState: true,
           child: Padding(
-            padding: EdgeInsets.all(16.r),
+            padding: EdgeInsets.all(24.r),
             child: CustomButton(
               text: S.of(context).onboardingButtonText,
               onPressed: () {},
@@ -67,6 +67,6 @@ class _OnboardingPageviewState extends State<OnboardingPageview> {
           ),
         ),
       ],
-    );
+    ),);
   }
 }
