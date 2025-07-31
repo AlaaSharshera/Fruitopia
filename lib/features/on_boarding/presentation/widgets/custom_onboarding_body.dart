@@ -57,7 +57,7 @@ class CustomOnboardingBody extends StatelessWidget {
               bottom: 0,
               right: 0,
               left: 0,
-              child: SvgPicture.asset(image, height: 230.h),
+              child: SvgPicture.asset(image, height: 200.h),
             ),
           ],
         ),
@@ -85,6 +85,7 @@ class CustomOnboardingBody extends StatelessWidget {
             ),
           ),
         ),
+        
       ],
     );
   }
