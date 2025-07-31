@@ -10,25 +10,22 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 32.h),
-      child: SizedBox(
-        width: MediaQuery.of(context).size.width,
-        child: ElevatedButton(
-          onPressed: onPressed,
-          style: ButtonStyle(
-            backgroundColor: WidgetStatePropertyAll(kPrimaryColor),
-            shape: WidgetStatePropertyAll(
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.r)),
-            ),
+    return SizedBox(
+      width: MediaQuery.of(context).size.width,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: ButtonStyle(
+          backgroundColor: WidgetStatePropertyAll(kPrimaryColor),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.r)),
           ),
-          child: Text(
-            text,
-            style: GoogleFonts.cairo(
-              color: Colors.white,
-              fontSize: 16.sp,
-              fontWeight: FontWeight.w700,
-            ),
+        ),
+        child: Text(
+          text,
+          style: GoogleFonts.cairo(
+            color: Colors.white,
+            fontSize: 16.sp,
+            fontWeight: FontWeight.w700,
           ),
         ),
       ),
