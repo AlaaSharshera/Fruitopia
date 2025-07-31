@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:fruitopia/core/utils/app_images.dart';
-import 'package:fruitopia/features/on_boarding/presentation/widgets/custom_button.dart';
 import 'package:fruitopia/features/on_boarding/presentation/widgets/custom_onboarding_body.dart';
 import 'package:fruitopia/generated/l10n.dart';
 
