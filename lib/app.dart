@@ -21,7 +21,9 @@ class Fruitopia  extends StatelessWidget {
       splitScreenMode: true,
       builder: (_ , child) {
         return MaterialApp(
-          theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor)),
+          theme: ThemeData(
+            scaffoldBackgroundColor: Colors.white,
+            colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor)),
        useInheritedMediaQuery: true,
          locale:  Locale(Prefs.getString(kAppLanguage).isNotEmpty? Prefs.getString(kAppLanguage) : 'en'),
       builder: DevicePreview.appBuilder,
