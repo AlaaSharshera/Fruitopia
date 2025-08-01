@@ -1,6 +1,9 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fruitopia/constants.dart';
+import 'package:fruitopia/core/services/shared_prefrences_singleton.dart';
+import 'package:fruitopia/features/auth/presentation/views/login_view.dart';
 import 'package:fruitopia/features/on_boarding/presentation/views/first_onboarding_view.dart';
 import 'package:fruitopia/features/on_boarding/presentation/views/second_onboarding_view.dart';
 import 'package:fruitopia/features/on_boarding/presentation/widgets/custom_button.dart';
@@ -62,7 +65,10 @@ class _OnboardingPageviewState extends State<OnboardingPageview> {
             padding: EdgeInsets.all(24.r),
             child: CustomButton(
               text: S.of(context).onboardingButtonText,
-              onPressed: () {},
+              onPressed: () {
+                Prefs.setBool(kIsOnBoardingViewSeen, true);
+                Navigator.pushReplacementNamed(context, LoginView.routeName);
+              },
             ),
           ),
         ),
