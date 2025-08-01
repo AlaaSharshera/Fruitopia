@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fruitopia/constants.dart';
 import 'package:fruitopia/core/cubits/app_language_cubit/app_language_cubit.dart';
 import 'package:fruitopia/core/helper_functions/on_generate_routes.dart';
-import 'package:fruitopia/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:fruitopia/core/services/shared_prefrences_singleton.dart';
+import 'package:fruitopia/features/splash/presentation/views/splash_view.dart';
 import 'generated/l10n.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -19,8 +21,7 @@ class Fruitopia  extends StatelessWidget {
       builder: (_ , child) {
         return MaterialApp(
        useInheritedMediaQuery: true,
-      //locale: DevicePreview.locale(context),
-         locale: state,
+         locale:  Locale(Prefs.getString(kAppLanguage).isNotEmpty? Prefs.getString(kAppLanguage) : 'en'),
       builder: DevicePreview.appBuilder,
         localizationsDelegates: [
                 S.delegate,
@@ -32,7 +33,7 @@ class Fruitopia  extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           onGenerateRoute: onGenerateRoutes,
           initialRoute: SplashView.routeName,
-      home: SplashView(),
+ 
     );
       },
       
