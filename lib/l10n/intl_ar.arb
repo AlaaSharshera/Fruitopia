@@ -19,7 +19,7 @@
     "signup": "إنشاء حساب جديد",
     "registerTitle": "حساب جديد",
     "fullName": "الاسم كامل",
-    "registerAlreadyHaveAccount": " هل لديك حساب؟",
+    "registerAlreadyHaveAccount": "  تمتلك حساب بالفعل؟ ",
     "acceptTerms": "من خلال إنشاء حساب ، فإنك توافق على الشروط والأحكام الخاصة بنا",
     "forgotPasswordTitle": "نسيان كلمة المرور",
     "forgotPasswordButton": "نسيت كلمة المرور",

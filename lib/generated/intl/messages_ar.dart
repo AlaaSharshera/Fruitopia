@@ -68,7 +68,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "تم تغيير كلمة المرور بنجاح",
     ),
     "registerAlreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
-      " هل لديك حساب؟",
+      "  تمتلك حساب بالفعل؟ ",
     ),
     "registerButtonText": MessageLookupByLibrary.simpleMessage(
       " قم بإنشاء حساب ",
