@@ -22,19 +22,20 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "DontHaveAccount": MessageLookupByLibrary.simpleMessage(
+      "Don\'t have an account? ",
+    ),
     "acceptTerms": MessageLookupByLibrary.simpleMessage(
       "By creating an account, you agree to our Terms & Conditions",
     ),
     "appLanguage": MessageLookupByLibrary.simpleMessage("عربي"),
     "appName": MessageLookupByLibrary.simpleMessage("Fruitopia"),
-    "appleSign": MessageLookupByLibrary.simpleMessage("Sign up with Apple"),
+    "appleSign": MessageLookupByLibrary.simpleMessage("Login with Apple"),
     "createNewPassword": MessageLookupByLibrary.simpleMessage(
       "Create New Password",
     ),
     "email": MessageLookupByLibrary.simpleMessage("E-mail"),
-    "facebookSign": MessageLookupByLibrary.simpleMessage(
-      "Sign up with Facebook",
-    ),
+    "facebookSign": MessageLookupByLibrary.simpleMessage("Login with Facebook"),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("Forget Password?"),
     "forgotPasswordButton": MessageLookupByLibrary.simpleMessage(
       "Forgot Password",
@@ -46,7 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Forgot Password",
     ),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
-    "googleSign": MessageLookupByLibrary.simpleMessage("Sign up with Google"),
+    "googleSign": MessageLookupByLibrary.simpleMessage("Login with Google"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
     "newPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
       "Create a new password to log in.",
@@ -69,7 +70,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Password changed successfully",
     ),
     "registerAlreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
-      "Already have an account?",
+      "Already have an account? ",
     ),
     "registerButtonText": MessageLookupByLibrary.simpleMessage(
       "Create an Account",

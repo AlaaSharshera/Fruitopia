@@ -139,7 +139,15 @@ class S {
     );
   }
 
-  // skipped getter for the 'Don\'tHaveAccount' key
+  /// `Don't have an account? `
+  String get DontHaveAccount {
+    return Intl.message(
+      'Don\'t have an account? ',
+      name: 'DontHaveAccount',
+      desc: '',
+      args: [],
+    );
+  }
 
   /// `Create an Account`
   String get registerButtonText {
@@ -156,30 +164,30 @@ class S {
     return Intl.message('OR', name: 'or', desc: '', args: []);
   }
 
-  /// `Sign up with Google`
+  /// `Login with Google`
   String get googleSign {
     return Intl.message(
-      'Sign up with Google',
+      'Login with Google',
       name: 'googleSign',
       desc: '',
       args: [],
     );
   }
 
-  /// `Sign up with Facebook`
+  /// `Login with Facebook`
   String get facebookSign {
     return Intl.message(
-      'Sign up with Facebook',
+      'Login with Facebook',
       name: 'facebookSign',
       desc: '',
       args: [],
     );
   }
 
-  /// `Sign up with Apple`
+  /// `Login with Apple`
   String get appleSign {
     return Intl.message(
-      'Sign up with Apple',
+      'Login with Apple',
       name: 'appleSign',
       desc: '',
       args: [],
@@ -211,10 +219,10 @@ class S {
     return Intl.message('Full Name', name: 'fullName', desc: '', args: []);
   }
 
-  /// `Already have an account?`
+  /// `Already have an account? `
   String get registerAlreadyHaveAccount {
     return Intl.message(
-      'Already have an account?',
+      'Already have an account? ',
       name: 'registerAlreadyHaveAccount',
       desc: '',
       args: [],

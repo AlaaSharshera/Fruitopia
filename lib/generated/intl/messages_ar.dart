@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "DontHaveAccount": MessageLookupByLibrary.simpleMessage(" لا تمتلك حساب؟"),
     "acceptTerms": MessageLookupByLibrary.simpleMessage(
       "من خلال إنشاء حساب ، فإنك توافق على الشروط والأحكام الخاصة بنا",
     ),
@@ -50,7 +51,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "قم بإنشاء كلمة مرور جديدة لتسجيل الدخول.",
     ),
     "newPasswordTitle": MessageLookupByLibrary.simpleMessage("كلمة مرور جديدة"),
-    "onboardingButtonText": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+    "onboardingButtonText": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
     "onboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
       "اكتشف تجربة تسوق فريدة مع Fruitopia. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.",
     ),
@@ -67,10 +68,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "تم تغيير كلمة المرور بنجاح",
     ),
     "registerAlreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
-      "هل لديك حساب؟",
+      " هل لديك حساب؟",
     ),
     "registerButtonText": MessageLookupByLibrary.simpleMessage(
-      "قم بإنشاء حساب",
+      " قم بإنشاء حساب ",
     ),
     "registerTitle": MessageLookupByLibrary.simpleMessage("حساب جديد"),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
