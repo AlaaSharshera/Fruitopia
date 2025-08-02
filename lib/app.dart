@@ -7,6 +7,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:fruitopia/core/services/shared_prefrences_singleton.dart';
 import 'package:fruitopia/core/utils/app_colors.dart';
 import 'package:fruitopia/features/splash/presentation/views/splash_view.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'generated/l10n.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -23,9 +24,19 @@ class Fruitopia  extends StatelessWidget {
         return MaterialApp(
           theme: ThemeData(
             scaffoldBackgroundColor: Colors.white,
+            appBarTheme: AppBarTheme( 
+              backgroundColor: Colors.white,
+              elevation: 0,
+              iconTheme:  IconThemeData(color: Colors.black,size: 20.r),
+              titleTextStyle: GoogleFonts.cairo(
+                fontSize: 20.sp,
+                fontWeight: FontWeight.w700,
+                color: Colors.black,
+              ),
+            ),
             colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor)),
        useInheritedMediaQuery: true,
-         locale:  Locale(Prefs.getString(kAppLanguage).isNotEmpty? Prefs.getString(kAppLanguage) : 'en'),
+         locale: Locale(Prefs.getString(kAppLanguage).isNotEmpty? Prefs.getString(kAppLanguage) : 'en'),
       builder: DevicePreview.appBuilder,
         localizationsDelegates: [
                 S.delegate,
