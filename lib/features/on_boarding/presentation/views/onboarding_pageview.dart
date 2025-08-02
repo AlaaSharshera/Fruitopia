@@ -6,7 +6,7 @@ import 'package:fruitopia/core/services/shared_prefrences_singleton.dart';
 import 'package:fruitopia/features/auth/presentation/views/login_view.dart';
 import 'package:fruitopia/features/on_boarding/presentation/views/first_onboarding_view.dart';
 import 'package:fruitopia/features/on_boarding/presentation/views/second_onboarding_view.dart';
-import 'package:fruitopia/features/on_boarding/presentation/widgets/custom_button.dart';
+import 'package:fruitopia/core/widgets/custom_button.dart';
 import 'package:fruitopia/features/on_boarding/presentation/widgets/custom_page_indicator.dart';
 import 'package:fruitopia/generated/l10n.dart';
 
