@@ -22,9 +22,35 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "acceptTerms": MessageLookupByLibrary.simpleMessage(
+      "من خلال إنشاء حساب ، فإنك توافق على الشروط والأحكام الخاصة بنا",
+    ),
     "appLanguage": MessageLookupByLibrary.simpleMessage("En"),
     "appName": MessageLookupByLibrary.simpleMessage("Fruitopia"),
-    "onboardingButtonText": MessageLookupByLibrary.simpleMessage(" ابدأ الان"),
+    "appleSign": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة أبل"),
+    "createNewPassword": MessageLookupByLibrary.simpleMessage(
+      "إنشاء كلمة مرور جديدة",
+    ),
+    "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "facebookSign": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة فيسبوك"),
+    "forgetPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+    "forgotPasswordButton": MessageLookupByLibrary.simpleMessage(
+      "نسيت كلمة المرور",
+    ),
+    "forgotPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
+      "لا تقلق، ما عليك سوى كتابة رقم هاتفك وسنرسل رمز التحقق.",
+    ),
+    "forgotPasswordTitle": MessageLookupByLibrary.simpleMessage(
+      "نسيان كلمة المرور",
+    ),
+    "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
+    "googleSign": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة جوجل "),
+    "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+    "newPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
+      "قم بإنشاء كلمة مرور جديدة لتسجيل الدخول.",
+    ),
+    "newPasswordTitle": MessageLookupByLibrary.simpleMessage("كلمة مرور جديدة"),
+    "onboardingButtonText": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
     "onboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
       "اكتشف تجربة تسوق فريدة مع Fruitopia. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.",
     ),
@@ -35,5 +61,24 @@ class MessageLookup extends MessageLookupByLibrary {
       "مرحبًا بك في Fruitopia",
     ),
     "onboardingTitle2": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
+    "or": MessageLookupByLibrary.simpleMessage("أو"),
+    "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+    "passwordChangedSuccess": MessageLookupByLibrary.simpleMessage(
+      "تم تغيير كلمة المرور بنجاح",
+    ),
+    "registerAlreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
+      "هل لديك حساب؟",
+    ),
+    "registerButtonText": MessageLookupByLibrary.simpleMessage(
+      "قم بإنشاء حساب",
+    ),
+    "registerTitle": MessageLookupByLibrary.simpleMessage("حساب جديد"),
+    "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
+    "signup": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
+    "verifyButton": MessageLookupByLibrary.simpleMessage("تحقق من الرمز"),
+    "verifyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
+      "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي.",
+    ),
+    "verifyCodeTitle": MessageLookupByLibrary.simpleMessage("التحقق من الرمز"),
   };
 }
