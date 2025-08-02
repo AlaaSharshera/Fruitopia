@@ -4,7 +4,13 @@ class Assets {
   
   static const String iconsLogo = "assets/icons/logo.png";
 
+  static const String imagesApple = "assets/images/apple.png";
+
   static const String imagesBackgroundOnboarding = "assets/images/background-onboarding.svg";
+
+  static const String imagesFacebook = "assets/images/facebook.png";
+
+  static const String imagesGoogle = "assets/images/google.png";
 
   static const String imagesOnboardingFruitBasket = "assets/images/onboarding-fruit-basket.svg";
 
