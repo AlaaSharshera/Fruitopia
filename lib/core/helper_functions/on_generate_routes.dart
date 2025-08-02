@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fruitopia/features/auth/presentation/views/login_view.dart';
+import 'package:fruitopia/features/auth/presentation/views/sign_up_view.dart';
 import 'package:fruitopia/features/on_boarding/presentation/views/first_onboarding_view.dart';
 import 'package:fruitopia/features/on_boarding/presentation/views/onboarding_pageview.dart';
 import 'package:fruitopia/features/on_boarding/presentation/views/second_onboarding_view.dart';
@@ -23,6 +24,8 @@ Route<dynamic> onGenerateRoutes(RouteSettings settings) {
       );
     case LoginView.routeName:
       return MaterialPageRoute(builder: (context) => const LoginView());
+    case SignUpView.routeName:
+      return MaterialPageRoute(builder: (context) => const SignUpView());
     default:
       return MaterialPageRoute(builder: (context) => const Scaffold());
   }
