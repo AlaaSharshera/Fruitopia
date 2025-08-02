@@ -22,8 +22,36 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "acceptTerms": MessageLookupByLibrary.simpleMessage(
+      "By creating an account, you agree to our Terms & Conditions",
+    ),
     "appLanguage": MessageLookupByLibrary.simpleMessage("عربي"),
     "appName": MessageLookupByLibrary.simpleMessage("Fruitopia"),
+    "appleSign": MessageLookupByLibrary.simpleMessage("Sign up with Apple"),
+    "createNewPassword": MessageLookupByLibrary.simpleMessage(
+      "Create New Password",
+    ),
+    "email": MessageLookupByLibrary.simpleMessage("E-mail"),
+    "facebookSign": MessageLookupByLibrary.simpleMessage(
+      "Sign up with Facebook",
+    ),
+    "forgetPassword": MessageLookupByLibrary.simpleMessage("Forget Password?"),
+    "forgotPasswordButton": MessageLookupByLibrary.simpleMessage(
+      "Forgot Password",
+    ),
+    "forgotPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Don\'t worry, just enter your phone number and we’ll send you a verification code.",
+    ),
+    "forgotPasswordTitle": MessageLookupByLibrary.simpleMessage(
+      "Forgot Password",
+    ),
+    "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+    "googleSign": MessageLookupByLibrary.simpleMessage("Sign up with Google"),
+    "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "newPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Create a new password to log in.",
+    ),
+    "newPasswordTitle": MessageLookupByLibrary.simpleMessage("New Password"),
     "onboardingButtonText": MessageLookupByLibrary.simpleMessage("Start Now"),
     "onboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with Fruitopia. Explore our wide selection of premium fresh fruits and enjoy the best deals and top quality.",
@@ -35,5 +63,24 @@ class MessageLookup extends MessageLookupByLibrary {
       "Welcome to Fruitopia",
     ),
     "onboardingTitle2": MessageLookupByLibrary.simpleMessage("Search and Shop"),
+    "or": MessageLookupByLibrary.simpleMessage("OR"),
+    "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "passwordChangedSuccess": MessageLookupByLibrary.simpleMessage(
+      "Password changed successfully",
+    ),
+    "registerAlreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
+      "Already have an account?",
+    ),
+    "registerButtonText": MessageLookupByLibrary.simpleMessage(
+      "Create an Account",
+    ),
+    "registerTitle": MessageLookupByLibrary.simpleMessage("New Account"),
+    "resendCode": MessageLookupByLibrary.simpleMessage("Resend Code"),
+    "signup": MessageLookupByLibrary.simpleMessage("Create a New Account"),
+    "verifyButton": MessageLookupByLibrary.simpleMessage("Verify Code"),
+    "verifyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Enter the code we sent to the following email address.",
+    ),
+    "verifyCodeTitle": MessageLookupByLibrary.simpleMessage("Verify Code"),
   };
 }
