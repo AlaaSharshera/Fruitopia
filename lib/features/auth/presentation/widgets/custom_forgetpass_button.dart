@@ -15,7 +15,7 @@ Widget customForgetPassButton(BuildContext context, {required VoidCallback onPre
                 S.of(context).forgetPassword,
                 style: GoogleFonts.cairo(
                   color: const Color(0xFF2D9F5D),
-                  fontSize: 13,
+                  fontSize: 13.sp,
                   fontWeight: FontWeight.w600,
                 ),
               ),
