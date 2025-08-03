@@ -8,10 +8,12 @@ class CustomTextFormField extends StatelessWidget {
     this.suffixIcon,
     this.obscureText = false,
     required this.hintText,
+     this.textInputType=TextInputType.text,
   });
   final Widget? suffixIcon;
   final String hintText;
   final bool obscureText;
+  final TextInputType textInputType ;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,9 @@ class CustomTextFormField extends StatelessWidget {
       ),
       child: TextFormField(
         obscureText: obscureText,
+        keyboardType: textInputType,
         decoration: InputDecoration(
+          
           suffixIcon: suffixIcon,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.r),
