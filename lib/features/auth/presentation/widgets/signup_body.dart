@@ -20,7 +20,7 @@ class SignUpBody extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(bottom: 16.h),
-            child: CustomTextFormField(hintText: S.of(context).email),
+            child: CustomTextFormField(hintText: S.of(context).email,textInputType: TextInputType.emailAddress,),
           ),
           CustomTextFormField(
             hintText: S.of(context).password,
@@ -72,7 +72,9 @@ class SignUpBody extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.all(8.r),
-            child: CustomButton(text: S.of(context).registerButtonText),
+            child: CustomButton(text: S.of(context).registerButtonText,onPressed:() {
+              
+            },),
           ),
           CustomHaveAccountRow(
             text: S.of(context).registerAlreadyHaveAccount,
