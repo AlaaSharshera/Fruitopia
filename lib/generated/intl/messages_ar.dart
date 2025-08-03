@@ -24,7 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "DontHaveAccount": MessageLookupByLibrary.simpleMessage(" لا تمتلك حساب؟"),
     "acceptTerms": MessageLookupByLibrary.simpleMessage(
-      "من خلال إنشاء حساب ، فإنك توافق على الشروط والأحكام الخاصة بنا",
+      "فإنك توافق على الشروط والأحكام الخاصة بنا ",
     ),
     "appLanguage": MessageLookupByLibrary.simpleMessage("En"),
     "appName": MessageLookupByLibrary.simpleMessage("Fruitopia"),
@@ -76,6 +76,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "registerTitle": MessageLookupByLibrary.simpleMessage("حساب جديد"),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
     "signup": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
+    "termsOfService": MessageLookupByLibrary.simpleMessage(
+      "من خلال إنشاء حساب  فإنك توافق على ",
+    ),
     "verifyButton": MessageLookupByLibrary.simpleMessage("تحقق من الرمز"),
     "verifyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
       "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي.",

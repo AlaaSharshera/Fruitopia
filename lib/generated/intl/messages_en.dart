@@ -26,7 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Don\'t have an account? ",
     ),
     "acceptTerms": MessageLookupByLibrary.simpleMessage(
-      "By creating an account, you agree to our Terms & Conditions",
+      "our terms and conditions",
     ),
     "appLanguage": MessageLookupByLibrary.simpleMessage("عربي"),
     "appName": MessageLookupByLibrary.simpleMessage("Fruitopia"),
@@ -78,6 +78,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "registerTitle": MessageLookupByLibrary.simpleMessage("New Account"),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend Code"),
     "signup": MessageLookupByLibrary.simpleMessage("Create a New Account"),
+    "termsOfService": MessageLookupByLibrary.simpleMessage(
+      "By creating an account, you agree to ",
+    ),
     "verifyButton": MessageLookupByLibrary.simpleMessage("Verify Code"),
     "verifyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
       "Enter the code we sent to the following email address.",

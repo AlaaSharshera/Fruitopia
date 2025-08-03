@@ -229,10 +229,20 @@ class S {
     );
   }
 
-  /// `By creating an account, you agree to our Terms & Conditions`
+  /// `By creating an account, you agree to `
+  String get termsOfService {
+    return Intl.message(
+      'By creating an account, you agree to ',
+      name: 'termsOfService',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `our terms and conditions`
   String get acceptTerms {
     return Intl.message(
-      'By creating an account, you agree to our Terms & Conditions',
+      'our terms and conditions',
       name: 'acceptTerms',
       desc: '',
       args: [],
