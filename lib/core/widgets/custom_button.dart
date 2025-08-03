@@ -4,7 +4,7 @@ import 'package:fruitopia/core/utils/app_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, required this.text, this.onPressed});
+  const CustomButton({super.key, required this.text,required this.onPressed});
   final String text;
   final VoidCallback? onPressed;
 
