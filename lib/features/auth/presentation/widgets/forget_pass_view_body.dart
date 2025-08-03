@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruitopia/core/widgets/custom_button.dart';
 import 'package:fruitopia/core/widgets/custom_textformfield.dart';
+import 'package:fruitopia/features/auth/presentation/views/otp_view.dart';
 import 'package:fruitopia/generated/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -24,10 +25,12 @@ class ForgetPassViewBody extends StatelessWidget {
               ),
             ),
           ),
-          CustomTextFormField(hintText: ""),
+          CustomTextFormField(hintText: "",textInputType: TextInputType.phone),
           Padding(
             padding: EdgeInsets.all(16.h),
-            child: CustomButton(text: S.of(context).forgotPasswordButton),
+            child: CustomButton(text: S.of(context).forgotPasswordButton,onPressed: (){
+              Navigator.pushNamed(context, OtpView.routeName);
+            },),
           ),
         ],
       ),
