@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruitopia/core/utils/app_images.dart';
 import 'package:fruitopia/core/widgets/custom_button.dart';
 import 'package:fruitopia/core/widgets/custom_textformfield.dart';
+import 'package:fruitopia/features/auth/presentation/views/forget_pass_view.dart';
 import 'package:fruitopia/features/auth/presentation/views/sign_up_view.dart';
 import 'package:fruitopia/features/auth/presentation/widgets/custom_auth_button.dart';
 import 'package:fruitopia/features/auth/presentation/widgets/custom_forgetpass_button.dart';
@@ -19,7 +20,7 @@ class LoginViewBody extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.symmetric(vertical: 16.r),
-            child: CustomTextFormField(hintText: S.of(context).email),
+            child: CustomTextFormField(hintText: S.of(context).email,textInputType: TextInputType.emailAddress,),
           ),
 
           CustomTextFormField(
@@ -27,11 +28,16 @@ class LoginViewBody extends StatelessWidget {
             obscureText: true,
             suffixIcon: Icon(Icons.remove_red_eye, color: Color(0xffC9CECF)),
           ),
-          customForgetPassButton(context, onPressed: () {}),
+          customForgetPassButton(context, onPressed: () {
+            Navigator.pushNamed(context, ForgetPassView.routeName);
+          }),
           Padding(
             padding: EdgeInsets.all(16.r),
-            child: CustomButton(text: S.of(context).login),
-          ),
+            child: CustomButton(text: S.of(context).login,
+              onPressed: () {
+              
+              },
+          ),),
           CustomHaveAccountRow(
             text: S.of(context).DontHaveAccount,
             actionText: S.of(context).registerButtonText,

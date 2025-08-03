@@ -50,7 +50,9 @@ class NewPassView extends StatelessWidget {
             ),
             Padding(
               padding:  EdgeInsets.all(16.r),
-              child: CustomButton(text: S.of(context).createNewPassword),
+              child: CustomButton(text: S.of(context).createNewPassword,onPressed: () {
+                
+              },),
             ),
           ],
         ),
