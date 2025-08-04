@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruitopia/generated/l10n.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 Widget customOrDivider(BuildContext context) {
   return Row(
@@ -17,11 +16,12 @@ Widget customOrDivider(BuildContext context) {
               ),
               Text(
                 S.of(context).or,
-                style: GoogleFonts.cairo(
+                style: TextStyle(
                   color:  Colors.black,
                   height: 4,
                   fontSize: 13.sp,
                   fontWeight: FontWeight.w600,
+                  fontFamily: 'Cairo',
                 ),
               ),
               Expanded(

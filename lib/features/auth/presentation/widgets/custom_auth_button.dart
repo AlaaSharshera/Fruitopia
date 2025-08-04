@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CustomAuthButton extends StatelessWidget {
   const CustomAuthButton({super.key, required this.buttonText, required this.buttonImage});
@@ -23,10 +22,11 @@ class CustomAuthButton extends StatelessWidget {
         SizedBox(width: 20.w),
         Image.asset(buttonImage),
         Spacer(),
-        Text(buttonText,style:GoogleFonts.cairo(
+        Text(buttonText,style:TextStyle(
           color: const Color(0xFF0C0D0D) ,
               fontSize: 16.sp,
               fontWeight: FontWeight.w600,
+              fontFamily: 'Cairo',
         )),
        SizedBox(width: MediaQuery.of(context).size.width * 0.25),
       ],)

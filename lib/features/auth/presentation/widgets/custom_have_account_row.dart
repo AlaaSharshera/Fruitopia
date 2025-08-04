@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CustomHaveAccountRow extends StatelessWidget {
   const CustomHaveAccountRow({
@@ -21,20 +20,22 @@ class CustomHaveAccountRow extends StatelessWidget {
         children: [
           Text(
             text,
-            style: GoogleFonts.cairo(
+            style: TextStyle(
               color: const Color(0xFF616A6B),
               fontSize: 16,
               fontWeight: FontWeight.w600,
+              fontFamily: 'Cairo',
             ),
           ),
           GestureDetector(
             onTap: onTap,
             child: Text(
               actionText,
-              style: GoogleFonts.cairo(
+              style: TextStyle(
                 color: const Color(0xFF1B5E37),
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
+                fontFamily: 'Cairo',
               ),
             ),
           ),

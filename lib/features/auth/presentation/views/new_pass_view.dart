@@ -6,7 +6,6 @@ import 'package:fruitopia/core/widgets/custom_appbar.dart';
 import 'package:fruitopia/core/widgets/custom_button.dart';
 import 'package:fruitopia/core/widgets/custom_textformfield.dart';
 import 'package:fruitopia/generated/l10n.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class NewPassView extends StatelessWidget {
   const NewPassView({super.key});
@@ -25,10 +24,11 @@ class NewPassView extends StatelessWidget {
                 textAlign: Prefs.getString(kAppLanguage) == 'ar'
                     ? TextAlign.right
                     : TextAlign.left,
-                style: GoogleFonts.cairo(
+                style: TextStyle(
                   color: const Color(0xFF0C0D0D),
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
+                  fontFamily: 'Cairo',
                 ),
               ),
             ),

@@ -6,7 +6,6 @@ import 'package:fruitopia/core/utils/app_colors.dart';
 import 'package:fruitopia/core/cubits/app_language_cubit/app_language_cubit.dart';
 import 'package:fruitopia/core/utils/app_images.dart';
 import 'package:fruitopia/generated/l10n.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CustomOnboardingBody extends StatelessWidget {
   const CustomOnboardingBody({
@@ -55,10 +54,11 @@ class CustomOnboardingBody extends StatelessWidget {
                     },
                     child: Text(
                       S.of(context).appLanguage,
-                      style: GoogleFonts.cairoPlay(
+                      style: TextStyle(
                         fontSize: 20.sp,
                         fontWeight: FontWeight.bold,
                         color: AppColors.primaryColor,
+                        fontFamily: 'CairoPlay',
                       ),
                     ),
                   ),
@@ -75,10 +75,11 @@ class CustomOnboardingBody extends StatelessWidget {
         SizedBox(height: 20.h),
         Text(
           title,
-          style: GoogleFonts.cairoPlay(
+          style: TextStyle(
             fontSize: 24.sp,
             fontWeight: FontWeight.bold,
             color: AppColors.primaryColor,
+            fontFamily: 'CairoPlay',
           ),
         ),
         SizedBox(height: 12.h),
@@ -87,12 +88,13 @@ class CustomOnboardingBody extends StatelessWidget {
           child: Text(
             subtitle,
             textAlign: TextAlign.center,
-            style: GoogleFonts.cairo(
+            style:TextStyle(
               fontSize: 14.sp,
               fontWeight: FontWeight.bold,
               color: AppColors.primaryColor,
               height: 1.5.h,
               letterSpacing: 0.5.sp,
+              fontFamily: 'Cairo',
             ),
           ),
         ),

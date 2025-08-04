@@ -4,7 +4,6 @@ import 'package:fruitopia/core/widgets/custom_button.dart';
 import 'package:fruitopia/features/auth/presentation/views/new_pass_view.dart';
 import 'package:fruitopia/features/auth/presentation/widgets/custom_otp_textfield.dart';
 import 'package:fruitopia/generated/l10n.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class OTPViewBody extends StatelessWidget {
   const OTPViewBody({
@@ -20,10 +19,11 @@ class OTPViewBody extends StatelessWidget {
             padding: EdgeInsets.all(16.r),
             child: Text(
               S.of(context).verifyCodeSubtitle,
-              style: GoogleFonts.cairo(
+              style: TextStyle(
                 color: const Color(0xFF616A6B),
-                fontSize: 16,
+                fontSize: 16.sp,
                 fontWeight: FontWeight.w600,
+                fontFamily: 'Cairo',
               ),
             ),
           ),
@@ -40,10 +40,11 @@ class OTPViewBody extends StatelessWidget {
             onPressed: (){},
             child: Text(
               S.of(context).resendCode,
-              style: GoogleFonts.cairo(
+              style: TextStyle(
                 color: const Color(0xFF2D9F5D),
                 fontSize: 16.sp,
                 fontWeight: FontWeight.w600,
+                fontFamily: 'Cairo',
               ),
             ),
           ),

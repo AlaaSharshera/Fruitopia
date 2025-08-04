@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
@@ -41,10 +40,11 @@ class CustomTextFormField extends StatelessWidget {
             vertical: 14.h,
           ),
           hintText: hintText,
-          hintStyle: GoogleFonts.cairo(
+          hintStyle: TextStyle(
             color: const Color(0xFF949D9E),
             fontSize: 13.sp,
             fontWeight: FontWeight.w700,
+            fontFamily: 'Cairo',
           ),
         ),
       ),

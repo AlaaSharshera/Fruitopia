@@ -4,7 +4,6 @@ import 'package:fruitopia/core/widgets/custom_button.dart';
 import 'package:fruitopia/core/widgets/custom_textformfield.dart';
 import 'package:fruitopia/features/auth/presentation/views/otp_view.dart';
 import 'package:fruitopia/generated/l10n.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ForgetPassViewBody extends StatelessWidget {
   const ForgetPassViewBody({super.key});
@@ -18,10 +17,11 @@ class ForgetPassViewBody extends StatelessWidget {
             padding:  EdgeInsets.all(16.r),
             child: Text(
               S.of(context).forgotPasswordSubtitle,
-              style: GoogleFonts.cairo(
+              style: TextStyle(
                 color: const Color(0xFF616A6B),
-                fontSize: 16,
+                fontSize: 16.sp,
                 fontWeight: FontWeight.w600,
+                fontFamily: 'Cairo',
               ),
             ),
           ),
