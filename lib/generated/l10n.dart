@@ -438,6 +438,131 @@ class S {
       args: [],
     );
   }
+
+  /// `Personal Information`
+  String get personalInfo {
+    return Intl.message(
+      'Personal Information',
+      name: 'personalInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change Password`
+  String get changePassword {
+    return Intl.message(
+      'Change Password',
+      name: 'changePassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Current Password`
+  String get currentPassword {
+    return Intl.message(
+      'Current Password',
+      name: 'currentPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New Password`
+  String get newPassword {
+    return Intl.message(
+      'New Password',
+      name: 'newPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm New Password`
+  String get confirmNewPassword {
+    return Intl.message(
+      'Confirm New Password',
+      name: 'confirmNewPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save Changes`
+  String get saveChanges {
+    return Intl.message(
+      'Save Changes',
+      name: 'saveChanges',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add New Card`
+  String get addNewCard {
+    return Intl.message('Add New Card', name: 'addNewCard', desc: '', args: []);
+  }
+
+  /// `Make Card Default`
+  String get makeCardDefault {
+    return Intl.message(
+      'Make Card Default',
+      name: 'makeCardDefault',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Expiry Date`
+  String get expiryDate {
+    return Intl.message('Expiry Date', name: 'expiryDate', desc: '', args: []);
+  }
+
+  /// `Card Number`
+  String get cardNumber {
+    return Intl.message('Card Number', name: 'cardNumber', desc: '', args: []);
+  }
+
+  /// `Cardholder Name`
+  String get cardHolderName {
+    return Intl.message(
+      'Cardholder Name',
+      name: 'cardHolderName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add New Payment Method`
+  String get addNewPaymentMethod {
+    return Intl.message(
+      'Add New Payment Method',
+      name: 'addNewPaymentMethod',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No`
+  String get no {
+    return Intl.message('No', name: 'no', desc: '', args: []);
+  }
+
+  /// `Confirm`
+  String get yes {
+    return Intl.message('Confirm', name: 'yes', desc: '', args: []);
+  }
+
+  /// `Do you want to log out?`
+  String get logoutConfirmation {
+    return Intl.message(
+      'Do you want to log out?',
+      name: 'logoutConfirmation',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

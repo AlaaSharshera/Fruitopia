@@ -29,14 +29,26 @@ class MessageLookup extends MessageLookupByLibrary {
     "acceptTerms": MessageLookupByLibrary.simpleMessage(
       "our terms and conditions",
     ),
+    "addNewCard": MessageLookupByLibrary.simpleMessage("Add New Card"),
+    "addNewPaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "Add New Payment Method",
+    ),
     "appLanguage": MessageLookupByLibrary.simpleMessage("عربي"),
     "appName": MessageLookupByLibrary.simpleMessage("Fruitopia"),
     "appleSign": MessageLookupByLibrary.simpleMessage("Login with Apple"),
+    "cardHolderName": MessageLookupByLibrary.simpleMessage("Cardholder Name"),
+    "cardNumber": MessageLookupByLibrary.simpleMessage("Card Number"),
+    "changePassword": MessageLookupByLibrary.simpleMessage("Change Password"),
+    "confirmNewPassword": MessageLookupByLibrary.simpleMessage(
+      "Confirm New Password",
+    ),
     "createNewPassword": MessageLookupByLibrary.simpleMessage(
       "Create New Password",
     ),
+    "currentPassword": MessageLookupByLibrary.simpleMessage("Current Password"),
     "editProfilePicture": MessageLookupByLibrary.simpleMessage("Edit Picture"),
     "email": MessageLookupByLibrary.simpleMessage("E-mail"),
+    "expiryDate": MessageLookupByLibrary.simpleMessage("Expiry Date"),
     "facebookSign": MessageLookupByLibrary.simpleMessage("Login with Facebook"),
     "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("Forget Password?"),
@@ -56,11 +68,19 @@ class MessageLookup extends MessageLookupByLibrary {
     "language": MessageLookupByLibrary.simpleMessage("Language"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
     "logout": MessageLookupByLibrary.simpleMessage("Logout"),
+    "logoutConfirmation": MessageLookupByLibrary.simpleMessage(
+      "Do you want to log out?",
+    ),
+    "makeCardDefault": MessageLookupByLibrary.simpleMessage(
+      "Make Card Default",
+    ),
     "myOrders": MessageLookupByLibrary.simpleMessage("My Orders"),
+    "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
     "newPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
       "Create a new password to log in.",
     ),
     "newPasswordTitle": MessageLookupByLibrary.simpleMessage("New Password"),
+    "no": MessageLookupByLibrary.simpleMessage("No"),
     "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
     "onboardingButtonText": MessageLookupByLibrary.simpleMessage("Start Now"),
     "onboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
@@ -79,6 +99,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Password changed successfully",
     ),
     "payments": MessageLookupByLibrary.simpleMessage("Payments"),
+    "personalInfo": MessageLookupByLibrary.simpleMessage(
+      "Personal Information",
+    ),
     "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "profileTitle": MessageLookupByLibrary.simpleMessage("My Account"),
     "registerAlreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
@@ -89,6 +112,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "registerTitle": MessageLookupByLibrary.simpleMessage("New Account"),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend Code"),
+    "saveChanges": MessageLookupByLibrary.simpleMessage("Save Changes"),
     "selectedLanguage": MessageLookupByLibrary.simpleMessage("English"),
     "signup": MessageLookupByLibrary.simpleMessage("Create a New Account"),
     "termsOfService": MessageLookupByLibrary.simpleMessage(
@@ -100,5 +124,6 @@ class MessageLookup extends MessageLookupByLibrary {
       "Enter the code we sent to the following email address.",
     ),
     "verifyCodeTitle": MessageLookupByLibrary.simpleMessage("Verify Code"),
+    "yes": MessageLookupByLibrary.simpleMessage("Confirm"),
   };
 }

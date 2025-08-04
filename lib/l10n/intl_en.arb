@@ -46,5 +46,20 @@
     "helpSection": "Help",
     "aboutUs": "About Us",
     "logout": "Logout",
-    "selectedLanguage": "English"
+    "selectedLanguage": "English",
+    "personalInfo": "Personal Information",
+    "changePassword": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "saveChanges": "Save Changes",
+    "addNewCard": "Add New Card",
+    "makeCardDefault": "Make Card Default",
+    "expiryDate": "Expiry Date",
+    "cardNumber": "Card Number",
+    "cardHolderName": "Cardholder Name",
+    "addNewPaymentMethod": "Add New Payment Method",
+    "no": "No",
+    "yes": "Confirm",
+    "logoutConfirmation": "Do you want to log out?"
 }

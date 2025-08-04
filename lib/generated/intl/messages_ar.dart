@@ -27,13 +27,27 @@ class MessageLookup extends MessageLookupByLibrary {
     "acceptTerms": MessageLookupByLibrary.simpleMessage(
       "فإنك توافق على الشروط والأحكام الخاصة بنا ",
     ),
+    "addNewCard": MessageLookupByLibrary.simpleMessage("إضافة بطاقة جديدة"),
+    "addNewPaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "أضف وسيلة دفع جديدة",
+    ),
     "appLanguage": MessageLookupByLibrary.simpleMessage("En"),
     "appName": MessageLookupByLibrary.simpleMessage("Fruitopia"),
     "appleSign": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة أبل"),
+    "cardHolderName": MessageLookupByLibrary.simpleMessage("اسم حامل البطاقة"),
+    "cardNumber": MessageLookupByLibrary.simpleMessage("رقم البطاقة"),
+    "changePassword": MessageLookupByLibrary.simpleMessage("تغيير كلمة المرور"),
+    "confirmNewPassword": MessageLookupByLibrary.simpleMessage(
+      "تأكيد كلمة المرور الجديدة",
+    ),
     "createNewPassword": MessageLookupByLibrary.simpleMessage(
       "إنشاء كلمة مرور جديدة",
     ),
+    "currentPassword": MessageLookupByLibrary.simpleMessage(
+      "كلمة المرور الحالية",
+    ),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "expiryDate": MessageLookupByLibrary.simpleMessage("تاريخ الصلاحية"),
     "facebookSign": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة فيسبوك"),
     "favorites": MessageLookupByLibrary.simpleMessage("المفضلة"),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
@@ -53,11 +67,19 @@ class MessageLookup extends MessageLookupByLibrary {
     "language": MessageLookupByLibrary.simpleMessage("اللغة"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
+    "logoutConfirmation": MessageLookupByLibrary.simpleMessage(
+      "هل ترغب في تسجيل الخروج؟",
+    ),
+    "makeCardDefault": MessageLookupByLibrary.simpleMessage(
+      "جعل البطاقة افتراضية",
+    ),
     "myOrders": MessageLookupByLibrary.simpleMessage("طلباتي"),
+    "newPassword": MessageLookupByLibrary.simpleMessage("كلمة المرور الجديدة"),
     "newPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
       "قم بإنشاء كلمة مرور جديدة لتسجيل الدخول.",
     ),
     "newPasswordTitle": MessageLookupByLibrary.simpleMessage("كلمة مرور جديدة"),
+    "no": MessageLookupByLibrary.simpleMessage("لا أرغب"),
     "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
     "onboardingButtonText": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
     "onboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
@@ -76,6 +98,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "تم تغيير كلمة المرور بنجاح",
     ),
     "payments": MessageLookupByLibrary.simpleMessage("المدفوعات"),
+    "personalInfo": MessageLookupByLibrary.simpleMessage("المعلومات الشخصية"),
     "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
     "profileTitle": MessageLookupByLibrary.simpleMessage("حسابي"),
     "registerAlreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
@@ -86,6 +109,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "registerTitle": MessageLookupByLibrary.simpleMessage("حساب جديد"),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
+    "saveChanges": MessageLookupByLibrary.simpleMessage("حفظ التغييرات"),
     "selectedLanguage": MessageLookupByLibrary.simpleMessage("العربية"),
     "signup": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
     "termsOfService": MessageLookupByLibrary.simpleMessage(
@@ -97,5 +121,6 @@ class MessageLookup extends MessageLookupByLibrary {
       "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي.",
     ),
     "verifyCodeTitle": MessageLookupByLibrary.simpleMessage("التحقق من الرمز"),
+    "yes": MessageLookupByLibrary.simpleMessage("تأكيد"),
   };
 }

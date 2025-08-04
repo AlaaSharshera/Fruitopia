@@ -45,5 +45,20 @@
     "helpSection": "المساعدة",
     "aboutUs": "من نحن",
     "logout": "تسجيل الخروج",
-    "selectedLanguage": "العربية"
+    "selectedLanguage": "العربية",
+    "personalInfo": "المعلومات الشخصية",
+    "changePassword": "تغيير كلمة المرور",
+    "currentPassword": "كلمة المرور الحالية",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+    "saveChanges": "حفظ التغييرات",
+    "addNewCard": "إضافة بطاقة جديدة",
+    "cardHolderName": "اسم حامل البطاقة",
+    "cardNumber": "رقم البطاقة",
+    "expiryDate": "تاريخ الصلاحية",
+    "makeCardDefault": "جعل البطاقة افتراضية",
+    "addNewPaymentMethod": "أضف وسيلة دفع جديدة",
+    "no": "لا أرغب",
+    "yes": "تأكيد",
+    "logoutConfirmation": "هل ترغب في تسجيل الخروج؟"
 }
