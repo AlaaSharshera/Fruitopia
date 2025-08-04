@@ -353,6 +353,91 @@ class S {
       args: [],
     );
   }
+
+  /// `My Account`
+  String get profileTitle {
+    return Intl.message('My Account', name: 'profileTitle', desc: '', args: []);
+  }
+
+  /// `Edit Picture`
+  String get editProfilePicture {
+    return Intl.message(
+      'Edit Picture',
+      name: 'editProfilePicture',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `General`
+  String get generalSection {
+    return Intl.message('General', name: 'generalSection', desc: '', args: []);
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message('Profile', name: 'profile', desc: '', args: []);
+  }
+
+  /// `My Orders`
+  String get myOrders {
+    return Intl.message('My Orders', name: 'myOrders', desc: '', args: []);
+  }
+
+  /// `Payments`
+  String get payments {
+    return Intl.message('Payments', name: 'payments', desc: '', args: []);
+  }
+
+  /// `Favorites`
+  String get favorites {
+    return Intl.message('Favorites', name: 'favorites', desc: '', args: []);
+  }
+
+  /// `Notifications`
+  String get notifications {
+    return Intl.message(
+      'Notifications',
+      name: 'notifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Language`
+  String get language {
+    return Intl.message('Language', name: 'language', desc: '', args: []);
+  }
+
+  /// `Theme Mode`
+  String get themeMode {
+    return Intl.message('Theme Mode', name: 'themeMode', desc: '', args: []);
+  }
+
+  /// `Help`
+  String get helpSection {
+    return Intl.message('Help', name: 'helpSection', desc: '', args: []);
+  }
+
+  /// `About Us`
+  String get aboutUs {
+    return Intl.message('About Us', name: 'aboutUs', desc: '', args: []);
+  }
+
+  /// `Logout`
+  String get logout {
+    return Intl.message('Logout', name: 'logout', desc: '', args: []);
+  }
+
+  /// `English`
+  String get selectedLanguage {
+    return Intl.message(
+      'English',
+      name: 'selectedLanguage',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

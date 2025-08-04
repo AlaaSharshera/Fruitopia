@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "DontHaveAccount": MessageLookupByLibrary.simpleMessage(
       "Don\'t have an account? ",
     ),
+    "aboutUs": MessageLookupByLibrary.simpleMessage("About Us"),
     "acceptTerms": MessageLookupByLibrary.simpleMessage(
       "our terms and conditions",
     ),
@@ -34,8 +35,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "createNewPassword": MessageLookupByLibrary.simpleMessage(
       "Create New Password",
     ),
+    "editProfilePicture": MessageLookupByLibrary.simpleMessage("Edit Picture"),
     "email": MessageLookupByLibrary.simpleMessage("E-mail"),
     "facebookSign": MessageLookupByLibrary.simpleMessage("Login with Facebook"),
+    "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("Forget Password?"),
     "forgotPasswordButton": MessageLookupByLibrary.simpleMessage(
       "Forgot Password",
@@ -47,12 +50,18 @@ class MessageLookup extends MessageLookupByLibrary {
       "Forgot Password",
     ),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+    "generalSection": MessageLookupByLibrary.simpleMessage("General"),
     "googleSign": MessageLookupByLibrary.simpleMessage("Login with Google"),
+    "helpSection": MessageLookupByLibrary.simpleMessage("Help"),
+    "language": MessageLookupByLibrary.simpleMessage("Language"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "logout": MessageLookupByLibrary.simpleMessage("Logout"),
+    "myOrders": MessageLookupByLibrary.simpleMessage("My Orders"),
     "newPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
       "Create a new password to log in.",
     ),
     "newPasswordTitle": MessageLookupByLibrary.simpleMessage("New Password"),
+    "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
     "onboardingButtonText": MessageLookupByLibrary.simpleMessage("Start Now"),
     "onboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with Fruitopia. Explore our wide selection of premium fresh fruits and enjoy the best deals and top quality.",
@@ -69,6 +78,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "passwordChangedSuccess": MessageLookupByLibrary.simpleMessage(
       "Password changed successfully",
     ),
+    "payments": MessageLookupByLibrary.simpleMessage("Payments"),
+    "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+    "profileTitle": MessageLookupByLibrary.simpleMessage("My Account"),
     "registerAlreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account? ",
     ),
@@ -77,10 +89,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "registerTitle": MessageLookupByLibrary.simpleMessage("New Account"),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend Code"),
+    "selectedLanguage": MessageLookupByLibrary.simpleMessage("English"),
     "signup": MessageLookupByLibrary.simpleMessage("Create a New Account"),
     "termsOfService": MessageLookupByLibrary.simpleMessage(
       "By creating an account, you agree to ",
     ),
+    "themeMode": MessageLookupByLibrary.simpleMessage("Theme Mode"),
     "verifyButton": MessageLookupByLibrary.simpleMessage("Verify Code"),
     "verifyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
       "Enter the code we sent to the following email address.",

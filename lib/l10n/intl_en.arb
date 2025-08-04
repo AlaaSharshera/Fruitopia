@@ -32,5 +32,19 @@
     "newPasswordTitle": "New Password",
     "newPasswordSubtitle": "Create a new password to log in.",
     "createNewPassword": "Create New Password",
-    "passwordChangedSuccess": "Password changed successfully"
+    "passwordChangedSuccess": "Password changed successfully",
+    "profileTitle": "My Account",
+    "editProfilePicture": "Edit Picture",
+    "generalSection": "General",
+    "profile": "Profile",
+    "myOrders": "My Orders",
+    "payments": "Payments",
+    "favorites": "Favorites",
+    "notifications": "Notifications",
+    "language": "Language",
+    "themeMode": "Theme Mode",
+    "helpSection": "Help",
+    "aboutUs": "About Us",
+    "logout": "Logout",
+    "selectedLanguage": "English"
 }

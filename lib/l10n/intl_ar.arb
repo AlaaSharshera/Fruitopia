@@ -21,7 +21,7 @@
     "fullName": "الاسم كامل",
     "registerAlreadyHaveAccount": "  تمتلك حساب بالفعل؟ ",
     "termsOfService": "من خلال إنشاء حساب  فإنك توافق على ",
-    "acceptTerms":"فإنك توافق على الشروط والأحكام الخاصة بنا ",
+    "acceptTerms": "فإنك توافق على الشروط والأحكام الخاصة بنا ",
     "forgotPasswordTitle": "نسيان كلمة المرور",
     "forgotPasswordButton": "نسيت كلمة المرور",
     "forgotPasswordSubtitle": "لا تقلق، ما عليك سوى كتابة رقم هاتفك وسنرسل رمز التحقق.",
@@ -32,5 +32,18 @@
     "newPasswordTitle": "كلمة مرور جديدة",
     "newPasswordSubtitle": "قم بإنشاء كلمة مرور جديدة لتسجيل الدخول.",
     "createNewPassword": "إنشاء كلمة مرور جديدة",
-    "passwordChangedSuccess": "تم تغيير كلمة المرور بنجاح"
+    "passwordChangedSuccess": "تم تغيير كلمة المرور بنجاح",
+    "profileTitle": "حسابي",
+    "generalSection": "عام",
+    "profile": "الملف الشخصي",
+    "myOrders": "طلباتي",
+    "payments": "المدفوعات",
+    "favorites": "المفضلة",
+    "notifications": "الإشعارات",
+    "language": "اللغة",
+    "themeMode": "الوضع",
+    "helpSection": "المساعدة",
+    "aboutUs": "من نحن",
+    "logout": "تسجيل الخروج",
+    "selectedLanguage": "العربية"
 }

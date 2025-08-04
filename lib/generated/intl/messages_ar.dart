@@ -23,6 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "DontHaveAccount": MessageLookupByLibrary.simpleMessage(" لا تمتلك حساب؟"),
+    "aboutUs": MessageLookupByLibrary.simpleMessage("من نحن"),
     "acceptTerms": MessageLookupByLibrary.simpleMessage(
       "فإنك توافق على الشروط والأحكام الخاصة بنا ",
     ),
@@ -34,6 +35,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "facebookSign": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة فيسبوك"),
+    "favorites": MessageLookupByLibrary.simpleMessage("المفضلة"),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
     "forgotPasswordButton": MessageLookupByLibrary.simpleMessage(
       "نسيت كلمة المرور",
@@ -45,12 +47,18 @@ class MessageLookup extends MessageLookupByLibrary {
       "نسيان كلمة المرور",
     ),
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
+    "generalSection": MessageLookupByLibrary.simpleMessage("عام"),
     "googleSign": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة جوجل "),
+    "helpSection": MessageLookupByLibrary.simpleMessage("المساعدة"),
+    "language": MessageLookupByLibrary.simpleMessage("اللغة"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+    "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
+    "myOrders": MessageLookupByLibrary.simpleMessage("طلباتي"),
     "newPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
       "قم بإنشاء كلمة مرور جديدة لتسجيل الدخول.",
     ),
     "newPasswordTitle": MessageLookupByLibrary.simpleMessage("كلمة مرور جديدة"),
+    "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
     "onboardingButtonText": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
     "onboardingSubtitle1": MessageLookupByLibrary.simpleMessage(
       "اكتشف تجربة تسوق فريدة مع Fruitopia. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.",
@@ -67,6 +75,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "passwordChangedSuccess": MessageLookupByLibrary.simpleMessage(
       "تم تغيير كلمة المرور بنجاح",
     ),
+    "payments": MessageLookupByLibrary.simpleMessage("المدفوعات"),
+    "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
+    "profileTitle": MessageLookupByLibrary.simpleMessage("حسابي"),
     "registerAlreadyHaveAccount": MessageLookupByLibrary.simpleMessage(
       "  تمتلك حساب بالفعل؟ ",
     ),
@@ -75,10 +86,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "registerTitle": MessageLookupByLibrary.simpleMessage("حساب جديد"),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
+    "selectedLanguage": MessageLookupByLibrary.simpleMessage("العربية"),
     "signup": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
     "termsOfService": MessageLookupByLibrary.simpleMessage(
       "من خلال إنشاء حساب  فإنك توافق على ",
     ),
+    "themeMode": MessageLookupByLibrary.simpleMessage("الوضع"),
     "verifyButton": MessageLookupByLibrary.simpleMessage("تحقق من الرمز"),
     "verifyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
       "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي.",
