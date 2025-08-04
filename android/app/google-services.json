@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "588693971661",
+    "project_id": "fruitopia-flutter",
+    "storage_bucket": "fruitopia-flutter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588693971661:android:c1875556d9505227adbf84",
+        "android_client_info": {
+          "package_name": "com.example.fruitopia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzUySh2Lb3wiKVgMH8bl-97z_ZE6JUKoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
