@@ -71,6 +71,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "logoutConfirmation": MessageLookupByLibrary.simpleMessage(
       "Do you want to log out?",
     ),
+    "loremParagraph": MessageLookupByLibrary.simpleMessage(
+      "There are many types of Lorem Ipsum text available, but the majority have been altered in some way by inserting random words or bits of humor. If you plan to use a passage of Lorem Ipsum, you must first ensure that there are no embarrassing or inappropriate phrases hidden in the text.",
+    ),
     "makeCardDefault": MessageLookupByLibrary.simpleMessage(
       "Make Card Default",
     ),

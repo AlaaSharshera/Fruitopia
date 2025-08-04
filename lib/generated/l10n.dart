@@ -563,6 +563,16 @@ class S {
       args: [],
     );
   }
+
+  /// `There are many types of Lorem Ipsum text available, but the majority have been altered in some way by inserting random words or bits of humor. If you plan to use a passage of Lorem Ipsum, you must first ensure that there are no embarrassing or inappropriate phrases hidden in the text.`
+  String get loremParagraph {
+    return Intl.message(
+      'There are many types of Lorem Ipsum text available, but the majority have been altered in some way by inserting random words or bits of humor. If you plan to use a passage of Lorem Ipsum, you must first ensure that there are no embarrassing or inappropriate phrases hidden in the text.',
+      name: 'loremParagraph',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

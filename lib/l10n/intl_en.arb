@@ -61,5 +61,6 @@
     "addNewPaymentMethod": "Add New Payment Method",
     "no": "No",
     "yes": "Confirm",
-    "logoutConfirmation": "Do you want to log out?"
+    "logoutConfirmation": "Do you want to log out?",
+    "loremParagraph": "There are many types of Lorem Ipsum text available, but the majority have been altered in some way by inserting random words or bits of humor. If you plan to use a passage of Lorem Ipsum, you must first ensure that there are no embarrassing or inappropriate phrases hidden in the text."
 }
