@@ -3,9 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:fruitopia/app.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:fruitopia/core/services/shared_prefrences_singleton.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
+await Firebase.initializeApp(
+  options: DefaultFirebaseOptions.currentPlatform,
+);
   await Prefs.init();
   runApp(DevicePreview(
     enabled: !kReleaseMode,
