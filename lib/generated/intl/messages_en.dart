@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "DontHaveAccount": MessageLookupByLibrary.simpleMessage(
       "Don\'t have an account? ",
     ),
+    "PleaseEnter": MessageLookupByLibrary.simpleMessage("Please Enter"),
     "aboutUs": MessageLookupByLibrary.simpleMessage("About Us"),
     "acceptTerms": MessageLookupByLibrary.simpleMessage(
       "our terms and conditions",
@@ -48,6 +49,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "currentPassword": MessageLookupByLibrary.simpleMessage("Current Password"),
     "editProfilePicture": MessageLookupByLibrary.simpleMessage("Edit Picture"),
     "email": MessageLookupByLibrary.simpleMessage("E-mail"),
+    "errorOccured": MessageLookupByLibrary.simpleMessage(
+      "An error occurred, please try again later.",
+    ),
+    "existedEmail": MessageLookupByLibrary.simpleMessage(
+      "The account already exists for that email.",
+    ),
     "expiryDate": MessageLookupByLibrary.simpleMessage("Expiry Date"),
     "facebookSign": MessageLookupByLibrary.simpleMessage("Login with Facebook"),
     "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
@@ -127,6 +134,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Enter the code we sent to the following email address.",
     ),
     "verifyCodeTitle": MessageLookupByLibrary.simpleMessage("Verify Code"),
+    "weakPassword": MessageLookupByLibrary.simpleMessage(
+      "The password provided is too weak.",
+    ),
     "yes": MessageLookupByLibrary.simpleMessage("Confirm"),
   };
 }

@@ -23,6 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "DontHaveAccount": MessageLookupByLibrary.simpleMessage(" لا تمتلك حساب؟"),
+    "PleaseEnter": MessageLookupByLibrary.simpleMessage("من فضلك ادخل"),
     "aboutUs": MessageLookupByLibrary.simpleMessage("من نحن"),
     "acceptTerms": MessageLookupByLibrary.simpleMessage(
       "فإنك توافق على الشروط والأحكام الخاصة بنا ",
@@ -47,6 +48,12 @@ class MessageLookup extends MessageLookupByLibrary {
       "كلمة المرور الحالية",
     ),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "errorOccured": MessageLookupByLibrary.simpleMessage(
+      "حدث خطأ ما، يرجى المحاولة لاحقًا.",
+    ),
+    "existedEmail": MessageLookupByLibrary.simpleMessage(
+      "يوجد حساب بالفعل مرتبط بهذا البريد الإلكتروني.",
+    ),
     "expiryDate": MessageLookupByLibrary.simpleMessage("تاريخ الصلاحية"),
     "facebookSign": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة فيسبوك"),
     "favorites": MessageLookupByLibrary.simpleMessage("المفضلة"),
@@ -124,6 +131,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي.",
     ),
     "verifyCodeTitle": MessageLookupByLibrary.simpleMessage("التحقق من الرمز"),
+    "weakPassword": MessageLookupByLibrary.simpleMessage(
+      "كلمة المرور التي أدخلتها ضعيفة جدًا.",
+    ),
     "yes": MessageLookupByLibrary.simpleMessage("تأكيد"),
   };
 }

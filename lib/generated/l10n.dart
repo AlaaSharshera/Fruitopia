@@ -573,6 +573,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Please Enter`
+  String get PleaseEnter {
+    return Intl.message(
+      'Please Enter',
+      name: 'PleaseEnter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The password provided is too weak.`
+  String get weakPassword {
+    return Intl.message(
+      'The password provided is too weak.',
+      name: 'weakPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An error occurred, please try again later.`
+  String get errorOccured {
+    return Intl.message(
+      'An error occurred, please try again later.',
+      name: 'errorOccured',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The account already exists for that email.`
+  String get existedEmail {
+    return Intl.message(
+      'The account already exists for that email.',
+      name: 'existedEmail',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
