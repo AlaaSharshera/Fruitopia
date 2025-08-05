@@ -85,6 +85,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Make Card Default",
     ),
     "myOrders": MessageLookupByLibrary.simpleMessage("My Orders"),
+    "networkError": MessageLookupByLibrary.simpleMessage(
+      "No internet connection. Please check your network and try again.",
+    ),
     "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
     "newPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
       "Create a new password to log in.",

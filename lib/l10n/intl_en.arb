@@ -66,5 +66,6 @@
     "PleaseEnter": "Please Enter",
     "weakPassword": "The password provided is too weak.",
     "errorOccured": "An error occurred, please try again later.",
-    "existedEmail": "The account already exists for that email."
+    "existedEmail": "The account already exists for that email.",
+    "networkError": "No internet connection. Please check your network and try again."
 }

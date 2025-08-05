@@ -613,6 +613,16 @@ class S {
       args: [],
     );
   }
+
+  /// `No internet connection. Please check your network and try again.`
+  String get networkError {
+    return Intl.message(
+      'No internet connection. Please check your network and try again.',
+      name: 'networkError',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

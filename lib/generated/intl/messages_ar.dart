@@ -84,6 +84,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "جعل البطاقة افتراضية",
     ),
     "myOrders": MessageLookupByLibrary.simpleMessage("طلباتي"),
+    "networkError": MessageLookupByLibrary.simpleMessage(
+      "لا يوجد اتصال بالإنترنت. من فضلك تحقق من الشبكة وحاول مرة أخرى.",
+    ),
     "newPassword": MessageLookupByLibrary.simpleMessage("كلمة المرور الجديدة"),
     "newPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
       "قم بإنشاء كلمة مرور جديدة لتسجيل الدخول.",
