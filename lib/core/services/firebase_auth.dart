@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fruitopia/core/errors/exceptions.dart';
+import 'package:fruitopia/generated/l10n.dart';
 
 class FirebaseAuthService {
 Future<User> createUserWithEmailAndPassword({required String email, required String password}) async {
@@ -11,14 +12,14 @@ Future<User> createUserWithEmailAndPassword({required String email, required Str
   return credential.user!;
 } on FirebaseAuthException catch (e) {
   if (e.code == 'weak-password') {
-   throw CustomException('The password provided is too weak.');
+   throw CustomException(S.current.weakPassword);
   } else if (e.code == 'email-already-in-use') {
-   throw CustomException('The account already exists for that email.');
+   throw CustomException(S.current.existedEmail);
   }
   else{
-    throw CustomException('An error occurred, please try again later.');
+    throw CustomException(S.current.errorOccured);
   }
 } catch (e) {
-  throw CustomException('An error occurred,please try again later.');
+  throw CustomException(S.current.errorOccured);
 }
 }}
