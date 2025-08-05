@@ -31,7 +31,7 @@ class CustomOnboardingBody extends StatelessWidget {
           children: [
             Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height * 0.53,
+              height: MediaQuery.of(context).size.height * 0.5,
               alignment: Alignment.topCenter,
               child: SvgPicture.asset(
                 Assets.imagesBackgroundOnboarding,
@@ -72,7 +72,7 @@ class CustomOnboardingBody extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 20.h),
+        
         Text(
           title,
           style: TextStyle(
