@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fruitopia/core/errors/exceptions.dart';
 import 'package:fruitopia/generated/l10n.dart';
@@ -11,11 +13,14 @@ Future<User> createUserWithEmailAndPassword({required String email, required Str
   );
   return credential.user!;
 } on FirebaseAuthException catch (e) {
+    log("FirebaseAuthException Code: ${e.code}");
+
   if (e.code == 'weak-password') {
    throw CustomException(S.current.weakPassword);
   } else if (e.code == 'email-already-in-use') {
    throw CustomException(S.current.existedEmail);
-  }
+  }else if (e.code == 'network-request-failed') {
+    throw CustomException(S.current.networkError); }
   else{
     throw CustomException(S.current.errorOccured);
   }
