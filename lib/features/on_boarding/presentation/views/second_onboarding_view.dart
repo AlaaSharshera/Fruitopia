@@ -9,14 +9,12 @@ class SecondOnboardingView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: CustomOnboardingBody(
+    return CustomOnboardingBody(
         isOnboarding1: false,
         title: S.of(context).onboardingTitle2,
         subtitle: S.of(context).onboardingSubtitle2,
         backgroundColor: Color(0xffB0E8C7),
         image: Assets.imagesPineappleOnboarding,
-      ),
-    );
+      );
   }
 }
