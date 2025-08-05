@@ -41,12 +41,14 @@ class NewPassView extends StatelessWidget {
                   Icons.remove_red_eye,
                   color: Color(0xffC9CECF),
                 ),
+                onSaved: (value) {},
               ),
             ),
             CustomTextFormField(
               hintText: "",
               obscureText: true,
               suffixIcon: Icon(Icons.remove_red_eye, color: Color(0xffC9CECF)),
+              onSaved: (value) {},
             ),
             Padding(
               padding:  EdgeInsets.all(16.r),

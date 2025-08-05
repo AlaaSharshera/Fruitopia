@@ -25,7 +25,7 @@ class ForgetPassViewBody extends StatelessWidget {
               ),
             ),
           ),
-          CustomTextFormField(hintText: "",textInputType: TextInputType.phone),
+          CustomTextFormField(hintText: "",textInputType: TextInputType.phone,onSaved: (value){},),
           Padding(
             padding: EdgeInsets.all(16.h),
             child: CustomButton(text: S.of(context).forgotPasswordButton,onPressed: (){

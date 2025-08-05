@@ -20,12 +20,13 @@ class LoginViewBody extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.symmetric(vertical: 16.r),
-            child: CustomTextFormField(hintText: S.of(context).email,textInputType: TextInputType.emailAddress,),
+            child: CustomTextFormField(hintText: S.of(context).email,textInputType: TextInputType.emailAddress,onSaved: (value){},),
           ),
 
           CustomTextFormField(
             hintText: S.of(context).password,
             obscureText: true,
+            onSaved: (value){},
             suffixIcon: Icon(Icons.remove_red_eye, color: Color(0xffC9CECF)),
           ),
           customForgetPassButton(context, onPressed: () {
