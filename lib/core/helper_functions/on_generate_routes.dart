@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:fruitopia/features/auth/presentation/views/forget_pass_view.dart';
-import 'package:fruitopia/features/auth/presentation/views/login_view.dart';
+import 'package:fruitopia/features/auth/presentation/views/signin_view.dart';
 import 'package:fruitopia/features/auth/presentation/views/new_pass_view.dart';
 import 'package:fruitopia/features/auth/presentation/views/otp_view.dart';
 import 'package:fruitopia/features/auth/presentation/views/sign_up_view.dart';
+import 'package:fruitopia/features/auth/presentation/widgets/signin_view_body.dart';
+import 'package:fruitopia/features/bottom_nav_bar/presentation/widgets/bottom_nav_bar.dart' ;
 import 'package:fruitopia/features/on_boarding/presentation/views/first_onboarding_view.dart';
 import 'package:fruitopia/features/on_boarding/presentation/views/onboarding_pageview.dart';
 import 'package:fruitopia/features/on_boarding/presentation/views/second_onboarding_view.dart';
@@ -25,8 +27,8 @@ Route<dynamic> onGenerateRoutes(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const OnboardingPageview(),
       );
-    case LoginView.routeName:
-      return MaterialPageRoute(builder: (context) => const LoginView());
+    case SigninView.routeName:
+      return MaterialPageRoute(builder: (context) => const SigninViewBody());
     case SignUpView.routeName:
       return MaterialPageRoute(builder: (context) => const SignUpView());
       case ForgetPassView.routeName:
@@ -35,6 +37,8 @@ Route<dynamic> onGenerateRoutes(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => const NewPassView());
     case OtpView.routeName:
       return MaterialPageRoute(builder: (context) => const OtpView());
+      case CustomBottomNavBar.routeName:
+      return MaterialPageRoute(builder: (context) => const CustomBottomNavBar());
      default:
       return MaterialPageRoute(builder: (context) => const Scaffold());
   }

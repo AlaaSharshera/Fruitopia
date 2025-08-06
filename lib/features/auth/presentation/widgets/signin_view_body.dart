@@ -11,8 +11,8 @@ import 'package:fruitopia/features/auth/presentation/widgets/custom_have_account
 import 'package:fruitopia/features/auth/presentation/widgets/custom_or_divider.dart';
 import 'package:fruitopia/generated/l10n.dart';
 
-class LoginViewBody extends StatelessWidget {
-  const LoginViewBody({super.key});
+class SigninViewBody extends StatelessWidget {
+  const SigninViewBody({super.key});
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
