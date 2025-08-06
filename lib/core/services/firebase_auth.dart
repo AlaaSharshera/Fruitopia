@@ -14,7 +14,7 @@ Future<User> createUserWithEmailAndPassword({required String email, required Str
   return credential.user!;
 } on FirebaseAuthException catch (e) {
 
-    log("Exception in FirebaseAuth.createUserWithEmailAndPassword: ${e.message}");
+    log("Exception in FirebaseAuth.createUserWithEmailAndPassword: ${e.message} e.code is: ${e.code}");
   if (e.code == 'weak-password') {
    throw CustomException(S.current.weakPassword);
   } else if (e.code == 'email-already-in-use') {
