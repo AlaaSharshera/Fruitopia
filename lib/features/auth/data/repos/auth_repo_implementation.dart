@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:dartz/dartz.dart';
 import 'package:fruitopia/core/errors/exceptions.dart';
 import 'package:fruitopia/core/errors/failures.dart';
@@ -17,6 +19,7 @@ class AuthRepoImplementation implements AuthRepo{
     } on CustomException catch (e) {
       return Left(ServerFailure(e.message));
     }catch (e) {
+      log("Exception in AuthRepoImplementation.createUserWithEmailAndPassword: ${e.toString()}");
       return Left(ServerFailure(e.toString()));
     }
   }
