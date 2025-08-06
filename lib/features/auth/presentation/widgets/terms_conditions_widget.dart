@@ -4,7 +4,8 @@ import 'package:fruitopia/features/auth/presentation/widgets/custom_checked_box.
 import 'package:fruitopia/generated/l10n.dart';
 
 class TermsAndConditionsWidget extends StatefulWidget {
-  const TermsAndConditionsWidget({super.key});
+  const TermsAndConditionsWidget({required this.onChanged,super.key});
+  final ValueChanged<bool> onChanged;
 
   @override
   State<TermsAndConditionsWidget> createState() => _TermsAndConditionsWidgetState();
@@ -22,6 +23,7 @@ class _TermsAndConditionsWidgetState extends State<TermsAndConditionsWidget> {
           CustomCheckedBox(isChecked: isTermsAccepted,onChanged: (value) {
             setState(() {
               isTermsAccepted = value;
+              widget.onChanged(value);
             });
           },),
           Expanded(
