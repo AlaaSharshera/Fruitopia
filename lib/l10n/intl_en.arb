@@ -67,5 +67,8 @@
     "weakPassword": "The password provided is too weak.",
     "errorOccured": "An error occurred, please try again later.",
     "existedEmail": "The account already exists for that email.",
-    "networkError": "No internet connection. Please check your network and try again."
+    "networkError": "No internet connection. Please check your network and try again.",
+    "rejectTerms":"You must agree to the terms and conditions"
+
+
 }

@@ -623,6 +623,16 @@ class S {
       args: [],
     );
   }
+
+  /// `You must agree to the terms and conditions`
+  String get rejectTerms {
+    return Intl.message(
+      'You must agree to the terms and conditions',
+      name: 'rejectTerms',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -124,6 +124,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Create an Account",
     ),
     "registerTitle": MessageLookupByLibrary.simpleMessage("New Account"),
+    "rejectTerms": MessageLookupByLibrary.simpleMessage(
+      "You must agree to the terms and conditions",
+    ),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend Code"),
     "saveChanges": MessageLookupByLibrary.simpleMessage("Save Changes"),
     "selectedLanguage": MessageLookupByLibrary.simpleMessage("English"),

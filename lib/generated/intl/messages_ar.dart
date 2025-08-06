@@ -121,6 +121,9 @@ class MessageLookup extends MessageLookupByLibrary {
       " قم بإنشاء حساب ",
     ),
     "registerTitle": MessageLookupByLibrary.simpleMessage("حساب جديد"),
+    "rejectTerms": MessageLookupByLibrary.simpleMessage(
+      "يجب عليك الموافقة علي الشروط والأحكام",
+    ),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
     "saveChanges": MessageLookupByLibrary.simpleMessage("حفظ التغييرات"),
     "selectedLanguage": MessageLookupByLibrary.simpleMessage("العربية"),
