@@ -143,6 +143,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "weakPassword": MessageLookupByLibrary.simpleMessage(
       "The password provided is too weak.",
     ),
+    "wronglogin": MessageLookupByLibrary.simpleMessage(
+      "No user found for the entered credentials.",
+    ),
     "yes": MessageLookupByLibrary.simpleMessage("Confirm"),
   };
 }

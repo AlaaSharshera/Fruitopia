@@ -68,7 +68,12 @@
     "errorOccured": "An error occurred, please try again later.",
     "existedEmail": "The account already exists for that email.",
     "networkError": "No internet connection. Please check your network and try again.",
-    "rejectTerms":"You must agree to the terms and conditions"
+    "rejectTerms":"You must agree to the terms and conditions",
+    "wronglogin": "No user found for the entered credentials."
+    
+
+
+
 
 
 }

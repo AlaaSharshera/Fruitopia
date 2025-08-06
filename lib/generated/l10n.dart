@@ -633,6 +633,16 @@ class S {
       args: [],
     );
   }
+
+  /// `No user found for the entered credentials.`
+  String get wronglogin {
+    return Intl.message(
+      'No user found for the entered credentials.',
+      name: 'wronglogin',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
