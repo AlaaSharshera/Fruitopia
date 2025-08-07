@@ -4,13 +4,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruitopia/core/helper_functions/show_snack_bar.dart';
 import 'package:fruitopia/core/widgets/custom_button.dart';
+import 'package:fruitopia/core/widgets/custom_loading_indicator.dart';
 import 'package:fruitopia/core/widgets/custom_textformfield.dart';
 import 'package:fruitopia/features/auth/presentation/cubits/signup_cubit/signup_cubit.dart';
 import 'package:fruitopia/features/auth/presentation/cubits/signup_cubit/signup_states.dart';
 import 'package:fruitopia/features/auth/presentation/widgets/custom_have_account_row.dart';
 import 'package:fruitopia/features/auth/presentation/widgets/terms_conditions_widget.dart';
 import 'package:fruitopia/generated/l10n.dart';
-import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
+
 
 class SignUpBody extends StatefulWidget {
   const SignUpBody({super.key});
@@ -39,8 +40,8 @@ class _SignUpBodyState extends State<SignUpBody> {
         }
       },
       builder: (context, state) {
-        return ModalProgressHUD(
-          inAsyncCall: state is SignupLoading,
+        return CustomLoadingIndicator(
+          isLoading: state is SignupLoading,
           child: SingleChildScrollView(
             child: Form(
               key: formKey,
